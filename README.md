@@ -96,11 +96,7 @@ Then, taking the differential, we get
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=-i&space;\hbar&space;\frac{\partial}{\partial&space;z}&space;\phi=&space;p\phi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-i&space;\hbar&space;\frac{\partial}{\partial&space;z}&space;\phi=&space;p\phi" title="-i \hbar \frac{\partial}{\partial z} \phi= p\phi" /></a>
 
-Since
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;m&space;\frac{d&space;z&space;}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;m&space;\frac{d&space;z&space;}{dt}" title="p = m \frac{d z }{dt}" /></a>
-
-and the commutation relationship between z and dz is formulaic, we get
+Since p is a function of z and dz and the commutation relationship between z and dz is formulaic, we get
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;z}" title="p = -i\hbar \frac{\partial}{\partial z}" /></a>
 
