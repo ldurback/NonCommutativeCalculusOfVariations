@@ -62,11 +62,11 @@ which we can rewrite as
 
 Definition of Force
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=F&space;:=&space;\frac{\partial&space;L}{\partial&space;\varepsilon}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;:=&space;\frac{\partial&space;L}{\partial&space;\varepsilon}" title="F := \frac{\partial L}{\partial \varepsilon}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=F&space;:=&space;\frac{\partial&space;L}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;:=&space;\frac{\partial&space;L}{\partial&space;z}" title="F := \frac{\partial L}{\partial z}" /></a>
 
 Definition of Momentum
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;:=&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;\varepsilon}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;:=&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;\varepsilon}" title="p := \frac{\partial L dt}{\partial d \varepsilon}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;:=&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;:=&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" title="p := \frac{\partial L dt}{\partial d z}" /></a>
 
 The Euler-Lagrange Equation then reads
 
@@ -74,11 +74,11 @@ The Euler-Lagrange Equation then reads
 
 ## Alternate form of the Lagrangian
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=d^2&space;S&space;=&space;\frac{\partial&space;L&space;dt}{\partial&space;\varepsilon}&space;\cdot&space;d&space;\varepsilon&space;&plus;&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;\varepsilon}&space;\cdot&space;d^2&space;\varepsilon&space;=&space;dp&space;\cdot&space;d\varepsilon&space;&plus;&space;p&space;\cdot&space;d^2&space;\varepsilon&space;=&space;d(p&space;\cdot&space;d&space;\varepsilon)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d^2&space;S&space;=&space;\frac{\partial&space;L&space;dt}{\partial&space;\varepsilon}&space;\cdot&space;d&space;\varepsilon&space;&plus;&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;\varepsilon}&space;\cdot&space;d^2&space;\varepsilon&space;=&space;dp&space;\cdot&space;d\varepsilon&space;&plus;&space;p&space;\cdot&space;d^2&space;\varepsilon&space;=&space;d(p&space;\cdot&space;d&space;\varepsilon)" title="d^2 S = \frac{\partial L dt}{\partial \varepsilon} \cdot d \varepsilon + \frac{\partial L dt}{\partial d \varepsilon} \cdot d^2 \varepsilon = dp \cdot d\varepsilon + p \cdot d^2 \varepsilon = d(p \cdot d \varepsilon)" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=d^2&space;S&space;=&space;\frac{\partial&space;L&space;dt}{\partial&space;z}&space;\cdot&space;d&space;z&space;&plus;&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}&space;\cdot&space;d^2&space;z&space;=&space;dp&space;\cdot&space;dz&space;&plus;&space;p&space;\cdot&space;d^2&space;z&space;=&space;d(p&space;\cdot&space;d&space;z)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d^2&space;S&space;=&space;\frac{\partial&space;L&space;dt}{\partial&space;z}&space;\cdot&space;d&space;z&space;&plus;&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}&space;\cdot&space;d^2&space;z&space;=&space;dp&space;\cdot&space;dz&space;&plus;&space;p&space;\cdot&space;d^2&space;z&space;=&space;d(p&space;\cdot&space;d&space;z)" title="d^2 S = \frac{\partial L dt}{\partial z} \cdot d z + \frac{\partial L dt}{\partial d z} \cdot d^2 z = dp \cdot dz + p \cdot d^2 z = d(p \cdot d z)" /></a>
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=dS&space;=&space;L&space;dt&space;=&space;p&space;\cdot&space;d\varepsilon" target="_blank"><img src="https://latex.codecogs.com/gif.latex?dS&space;=&space;L&space;dt&space;=&space;p&space;\cdot&space;d\varepsilon" title="dS = L dt = p \cdot d\varepsilon" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=L&space;=&space;p&space;\cdot&space;\frac{d\varepsilon}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L&space;=&space;p&space;\cdot&space;\frac{d\varepsilon}{dt}" title="L = p \cdot \frac{d\varepsilon}{dt}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=dS&space;=&space;L&space;dt&space;=&space;p&space;\cdot&space;dz" target="_blank"><img src="https://latex.codecogs.com/gif.latex?dS&space;=&space;L&space;dt&space;=&space;p&space;\cdot&space;dz" title="dS = L dt = p \cdot dz" /></a>
 
 ## The Form of the Kinetic Energy (to do)
 
@@ -93,19 +93,19 @@ Then, taking the differential, we get
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=-i&space;\hbar&space;d&space;\phi=dS&space;\phi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-i&space;\hbar&space;d&space;\phi=dS&space;\phi" title="-i \hbar d \phi=dS \phi" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=-i&space;\hbar&space;d&space;\phi=dS&space;\phi=(p&space;\cdot&space;d\varepsilon)\phi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-i&space;\hbar&space;d&space;\phi=dS&space;\phi=(p&space;\cdot&space;d\varepsilon)\phi" title="-i \hbar d \phi=dS \phi=(p \cdot d\varepsilon)\phi" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=-i&space;\hbar&space;d&space;\phi=dS&space;\phi=(p&space;\cdot&space;dz)\phi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-i&space;\hbar&space;d&space;\phi=dS&space;\phi=(p&space;\cdot&space;dz)\phi" title="-i \hbar d \phi=dS \phi=(p \cdot dz)\phi" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=-i&space;\hbar&space;\frac{\partial}{\partial&space;\varepsilon}&space;\phi=&space;p\phi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-i&space;\hbar&space;\frac{\partial}{\partial&space;\varepsilon}&space;\phi=&space;p\phi" title="-i \hbar \frac{\partial}{\partial \varepsilon} \phi= p\phi" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=-i&space;\hbar&space;\frac{\partial}{\partial&space;z}&space;\phi=&space;p\phi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-i&space;\hbar&space;\frac{\partial}{\partial&space;z}&space;\phi=&space;p\phi" title="-i \hbar \frac{\partial}{\partial z} \phi= p\phi" /></a>
 
 Since
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;m&space;\frac{d&space;\varepsilon&space;}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;m&space;\frac{d&space;\varepsilon&space;}{dt}" title="p = m \frac{d \varepsilon }{dt}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;m&space;\frac{d&space;z&space;}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;m&space;\frac{d&space;z&space;}{dt}" title="p = m \frac{d z }{dt}" /></a>
 
-and the commutation relationship between epsilon and depsilon is formulaic, we get
+and the commutation relationship between z and dz is formulaic, we get
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;\varepsilon}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;\varepsilon}" title="p = -i\hbar \frac{\partial}{\partial \varepsilon}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;z}" title="p = -i\hbar \frac{\partial}{\partial z}" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=d&space;\varepsilon&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;\varepsilon}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d&space;\varepsilon&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;\varepsilon}" title="d \varepsilon = -i\frac{\hbar}{m}dt \frac{\partial}{\partial \varepsilon}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=d&space;z&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d&space;z&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;z}" title="d z = -i\frac{\hbar}{m}dt \frac{\partial}{\partial z}" /></a>
 
 Since we assumed as the beginning that depsilon is hermitian, we get that hbar and m are real.
 
