@@ -4,7 +4,7 @@ A Lagrangian Mechanics where we do not assume that x and dx commute.
 
 ## Assumptions
 
-t, time, is a real number.  dt, the change in time, is a positive real number.
+t, time, is a real number.  dt, the change in time, is a positive real number.  d^2 t = 0.
 
 The system is progresses from a fixed initial state (the initial cause) to a fixed final state (the final cause, or goal state).
 
@@ -18,7 +18,7 @@ S is the integral from the initial state to the final state of L, the Lagrangian
 
 L is a function of (x, dx, t, dt)
 
-x and dx are elements of a (non-commutative) algebra.
+x and dx are elements of a (non-commutative) algebra and have a commutation relation.
 
 Defining
 
@@ -31,8 +31,6 @@ and
 Then
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=F&space;\to&space;0&space;\implies&space;\frac{dL}{dt}&space;\to&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;\to&space;0&space;\implies&space;\frac{dL}{dt}&space;\to&space;0" title="F \to 0 \implies \frac{dL}{dt} \to 0" /></a>
-
-Last, we assume that x and dx have a commutation relation.
 
 ## Euler-Lagrange Equations
 
@@ -81,7 +79,23 @@ The Euler-Lagrange Equation then reads
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=L&space;=&space;p&space;\cdot&space;\frac{dz}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L&space;=&space;p&space;\cdot&space;\frac{dz}{dt}" title="L = p \cdot \frac{dz}{dt}" /></a>
 
-## The Form of the Kinetic Energy (to do)
+## The Form of the Kinetic Energy and x-Momentum (to do)
+
+According to our assumptions, in the event that F -> 0, we have that dL/dt = d^2S/dt^2 -> 0.
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{dL}{dt}&space;=&space;\frac{d}{dt}&space;(p&space;\cdot&space;\frac{dz}{dt})&space;\to&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{dL}{dt}&space;=&space;\frac{d}{dt}&space;(p&space;\cdot&space;\frac{dz}{dt})&space;\to&space;0" title="\frac{dL}{dt} = \frac{d}{dt} (p \cdot \frac{dz}{dt}) \to 0" /></a>
+
+Since as F = dp/dt, we have that dp/dt -> 0, so
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;\cdot&space;\frac{d^2&space;z}{dt^2}&space;\to&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;\cdot&space;\frac{d^2&space;z}{dt^2}&space;\to&space;0" title="p \cdot \frac{d^2 z}{dt^2} \to 0" /></a>
+
+Note that z = (x,t), and name p = (p_x, p_t).  Also note that d^2 t = 0.
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p_x&space;\cdot&space;\frac{d^2&space;x}{dt^2}&space;\to&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_x&space;\cdot&space;\frac{d^2&space;x}{dt^2}&space;\to&space;0" title="p_x \cdot \frac{d^2 x}{dt^2} \to 0" /></a>
+
+Since p_x is arbitrary, we have
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{d^2&space;x}{dt^2}&space;\to&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{d^2&space;x}{dt^2}&space;\to&space;0" title="\frac{d^2 x}{dt^2} \to 0" /></a>
 
 
 ## The relationship between z and dz
