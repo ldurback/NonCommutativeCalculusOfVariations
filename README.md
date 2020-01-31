@@ -58,3 +58,23 @@ which we can rewrite as
 
 ## Force and Momentum
 
+Definition of Force
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=F&space;:=&space;\frac{\partial&space;L}{\partial&space;\varepsilon}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;:=&space;\frac{\partial&space;L}{\partial&space;\varepsilon}" title="F := \frac{\partial L}{\partial \varepsilon}" /></a>
+
+Definition of Momentum
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;:=&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;\varepsilon}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;:=&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;\varepsilon}" title="p := \frac{\partial L dt}{\partial d \varepsilon}" /></a>
+
+The Euler-Lagrange Equation then reads
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=F&space;=&space;\frac{d}{dt}&space;p" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;=&space;\frac{d}{dt}&space;p" title="F = \frac{d}{dt} p" /></a>
+
+## Alternate form of the Lagrangian
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=d^2&space;S&space;=&space;\frac{\partial&space;L&space;dt}{\partial&space;\varepsilon}&space;\cdot&space;d&space;\varepsilon&space;&plus;&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;\varepsilon}&space;\cdot&space;d^2&space;\varepsilon&space;=&space;dp&space;\cdot&space;d\varepsilon&space;&plus;&space;p&space;\cdot&space;d^2&space;\varepsilon&space;=&space;d(p&space;\cdot&space;d&space;\varepsilon)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d^2&space;S&space;=&space;\frac{\partial&space;L&space;dt}{\partial&space;\varepsilon}&space;\cdot&space;d&space;\varepsilon&space;&plus;&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;\varepsilon}&space;\cdot&space;d^2&space;\varepsilon&space;=&space;dp&space;\cdot&space;d\varepsilon&space;&plus;&space;p&space;\cdot&space;d^2&space;\varepsilon&space;=&space;d(p&space;\cdot&space;d&space;\varepsilon)" title="d^2 S = \frac{\partial L dt}{\partial \varepsilon} \cdot d \varepsilon + \frac{\partial L dt}{\partial d \varepsilon} \cdot d^2 \varepsilon = dp \cdot d\varepsilon + p \cdot d^2 \varepsilon = d(p \cdot d \varepsilon)" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=dS&space;=&space;L&space;dt&space;=&space;p&space;\cdot&space;d\varepsilon" target="_blank"><img src="https://latex.codecogs.com/gif.latex?dS&space;=&space;L&space;dt&space;=&space;p&space;\cdot&space;d\varepsilon" title="dS = L dt = p \cdot d\varepsilon" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=L&space;=&space;p&space;\cdot&space;\frac{d\varepsilon}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L&space;=&space;p&space;\cdot&space;\frac{d\varepsilon}{dt}" title="L = p \cdot \frac{d\varepsilon}{dt}" /></a>
+
