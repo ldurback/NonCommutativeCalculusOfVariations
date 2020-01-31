@@ -79,7 +79,7 @@ The Euler-Lagrange Equation then reads
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=L&space;=&space;p&space;\cdot&space;\frac{dz}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L&space;=&space;p&space;\cdot&space;\frac{dz}{dt}" title="L = p \cdot \frac{dz}{dt}" /></a>
 
-## The Form of the Kinetic Energy and x-Momentum (to do)
+## The Form of the Kinetic Energy and x-Momentum
 
 According to our assumptions, in the event that F -> 0, we have that dL/dt = d^2S/dt^2 -> 0.
 
