@@ -32,6 +32,8 @@ Then
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=F&space;\to&space;0&space;\implies&space;\frac{dL}{dt}&space;\to&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;\to&space;0&space;\implies&space;\frac{dL}{dt}&space;\to&space;0" title="F \to 0 \implies \frac{dL}{dt} \to 0" /></a>
 
+Last, we assume that the commutation relation between x and dx is formulaic in (x,t,dt) and constants.
+
 ## Euler-Lagrange Equations
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=0&space;=&space;\delta&space;S&space;=&space;\delta&space;\int_i^f&space;L&space;dt&space;=&space;\int_i^f&space;\delta(Ldt)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?0&space;=&space;\delta&space;S&space;=&space;\delta&space;\int_i^f&space;L&space;dt&space;=&space;\int_i^f&space;\delta(Ldt)" title="0 = \delta S = \delta \int_i^f L dt = \int_i^f \delta(Ldt)" /></a>
@@ -78,3 +80,29 @@ The Euler-Lagrange Equation then reads
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=L&space;=&space;p&space;\cdot&space;\frac{d\varepsilon}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L&space;=&space;p&space;\cdot&space;\frac{d\varepsilon}{dt}" title="L = p \cdot \frac{d\varepsilon}{dt}" /></a>
 
+## The Form of the Kinetic Energy (to do)
+
+
+## The relationship between epsilon and depsilon
+
+Define
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\phi=e^{\frac{S}{-i&space;\hbar}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\phi=e^{\frac{S}{-i&space;\hbar}}" title="\phi=e^{\frac{S}{-i \hbar}}" /></a>
+
+Then, taking the differential, we get
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=-i&space;\hbar&space;d&space;\phi=dS&space;\phi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-i&space;\hbar&space;d&space;\phi=dS&space;\phi" title="-i \hbar d \phi=dS \phi" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=-i&space;\hbar&space;d&space;\phi=dS&space;\phi=(p&space;\cdot&space;d\varepsilon)\phi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-i&space;\hbar&space;d&space;\phi=dS&space;\phi=(p&space;\cdot&space;d\varepsilon)\phi" title="-i \hbar d \phi=dS \phi=(p \cdot d\varepsilon)\phi" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=-i&space;\hbar&space;\frac{\partial}{\partial&space;\varepsilon}&space;\phi=&space;p\phi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-i&space;\hbar&space;\frac{\partial}{\partial&space;\varepsilon}&space;\phi=&space;p\phi" title="-i \hbar \frac{\partial}{\partial \varepsilon} \phi= p\phi" /></a>
+
+Since p = m (depsilon/dt), and the commutation relationship between epsilon and depsilon is formulaic, we get
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;\varepsilon}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;\varepsilon}" title="p = -i\hbar \frac{\partial}{\partial \varepsilon}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=dx&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;\varepsilon}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?dx&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;\varepsilon}" title="dx = -i\frac{\hbar}{m}dt \frac{\partial}{\partial \varepsilon}" /></a>
+
+Since we assumed as the beginning that depsilon is hermitian, we get that hbar and m are real.
+
+Since depsilon is also a generate of translation, we also get that hbar is positive.
