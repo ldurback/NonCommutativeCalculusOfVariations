@@ -22,17 +22,17 @@ x and dx are elements of a (non-commutative) algebra.
 
 Defining
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\varepsilon&space;=&space;(x,t)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\varepsilon&space;=&space;(x,t)" title="\varepsilon = (x,t)" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=z&space;=&space;(x,t)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?z&space;=&space;(x,t)" title="z = (x,t)" /></a>
 
 and
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=F&space;=&space;\frac{\partial&space;L}{\partial&space;\varepsilon}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;=&space;\frac{\partial&space;L}{\partial&space;\varepsilon}" title="F = \frac{\partial L}{\partial \varepsilon}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=F&space;=&space;\frac{\partial&space;L}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;=&space;\frac{\partial&space;L}{\partial&space;z}" title="F = \frac{\partial L}{\partial z}" /></a>
 
 Then
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=F&space;\to&space;0&space;\implies&space;\frac{dL}{dt}&space;\to&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;\to&space;0&space;\implies&space;\frac{dL}{dt}&space;\to&space;0" title="F \to 0 \implies \frac{dL}{dt} \to 0" /></a>
 
-Last, we assume that the commutation relation between x and dx is formulaic in (x,t,dt) and constants.
+Last, we assume that x and dx have a commutation relation.
 
 ## Euler-Lagrange Equations
 
