@@ -105,4 +105,4 @@ Since p = m (depsilon/dt), and the commutation relationship between epsilon and 
 
 Since we assumed as the beginning that depsilon is hermitian, we get that hbar and m are real.
 
-Since depsilon is also a generate of translation, we also get that hbar is positive.
+Since depsilon is also a generate of translation, we also get that hbar and m are positive.
