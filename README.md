@@ -101,7 +101,7 @@ Since p = m (depsilon/dt), and the commutation relationship between epsilon and 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;\varepsilon}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;\varepsilon}" title="p = -i\hbar \frac{\partial}{\partial \varepsilon}" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=dx&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;\varepsilon}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?dx&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;\varepsilon}" title="dx = -i\frac{\hbar}{m}dt \frac{\partial}{\partial \varepsilon}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=d&space;\varepsilon&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;\varepsilon}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d&space;\varepsilon&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;\varepsilon}" title="d \varepsilon = -i\frac{\hbar}{m}dt \frac{\partial}{\partial \varepsilon}" /></a>
 
 Since we assumed as the beginning that depsilon is hermitian, we get that hbar and m are real.
 
