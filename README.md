@@ -106,6 +106,6 @@ and the commutation relationship between z and dz is formulaic, we get
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=d&space;z&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d&space;z&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;z}" title="d z = -i\frac{\hbar}{m}dt \frac{\partial}{\partial z}" /></a>
 
-Since we assumed as the beginning that depsilon is hermitian, we get that hbar and m are real.
+Since we assumed as the beginning that z and dz are hermitian, we get that hbar and m are real.
 
-Since depsilon is also a generate of translation, we also get that hbar and m are positive.
+Since dz is also a generator of translations, we also get that hbar and m are positive.
