@@ -97,7 +97,11 @@ Then, taking the differential, we get
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=-i&space;\hbar&space;\frac{\partial}{\partial&space;\varepsilon}&space;\phi=&space;p\phi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-i&space;\hbar&space;\frac{\partial}{\partial&space;\varepsilon}&space;\phi=&space;p\phi" title="-i \hbar \frac{\partial}{\partial \varepsilon} \phi= p\phi" /></a>
 
-Since p = m (depsilon/dt), and the commutation relationship between epsilon and depsilon is formulaic, we get
+Since
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;m&space;\frac{d&space;\varepsilon&space;}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;m&space;\frac{d&space;\varepsilon&space;}{dt}" title="p = m \frac{d \varepsilon }{dt}" /></a>
+
+and the commutation relationship between epsilon and depsilon is formulaic, we get
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;\varepsilon}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;\varepsilon}" title="p = -i\hbar \frac{\partial}{\partial \varepsilon}" /></a>
 
