@@ -132,8 +132,10 @@ Since p is a function of z and dz and the commutation relationship between z and
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;z}" title="p = -i\hbar \frac{\partial}{\partial z}" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=d&space;z&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d&space;z&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;z}" title="d z = -i\frac{\hbar}{m}dt \frac{\partial}{\partial z}" /></a>
+Noting that p_x = m (dx/dt)
 
-Since we assumed as the beginning that z and dz are hermitian, we get that hbar and m are real.
+<a href="https://www.codecogs.com/eqnedit.php?latex=d&space;x&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;x}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d&space;x&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;x}" title="d x = -i\frac{\hbar}{m}dt \frac{\partial}{\partial x}" /></a>
 
-Since dz is also a generator of translations, we also get that hbar and m are positive.
+Since we assumed as the beginning that x and dx are hermitian, we get that hbar and m are real.
+
+Since dx is also a generator of translations, we also get that hbar and m are positive.
