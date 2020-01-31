@@ -116,7 +116,7 @@ Thus, we get
 Where V(x,t) is arbitrary.
 
 
-## The relationship between z and dz
+## The relationship between x and dx as well as z and p
 
 Define
 
