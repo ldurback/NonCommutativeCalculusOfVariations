@@ -83,7 +83,7 @@ The Euler-Lagrange Equation then reads
 ## The Form of the Kinetic Energy (to do)
 
 
-## The relationship between epsilon and depsilon
+## The relationship between z and dz
 
 Define
 
