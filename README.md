@@ -8,6 +8,8 @@ The Heisenberg Equations of Quantum Mechanics follow.
 
 # Motivation: Stablizing Strategies of Non-Commutative (Cooperative, Galilean) Relativistic Game Theory
 
+Note:  I will be concentrating on Cooperative Game Theory, in which each agent in the game has the same Utility Function (Review Score) so that the whole system is scored together because it is the easiest path I found to quantum mechanics.  In general, this theory can be generalized to Non-cooperative Game Theory, where each agent has its own Utility Function as well as its own Immediate Score.  I did not concentrate on non-cooperative game theory because I could not find any argument from it that p = m(dx/dt).
+
 The total system in a cooperative game theory has an initial state (initial cause), an endgoal state (final cause), a current state, and a Utility Function (Review Score), which scores the dynamics between the initial state and the current state.
 
 The Stabilizing Strategies of a game theory have a final Utility Function (the Utility Function evaluated at the endgoal) which does not at all change when the strategy is infinitesimally perturbed.  This ensures that approximations to the strategies exists.
