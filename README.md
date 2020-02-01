@@ -8,13 +8,13 @@ The Heisenberg Equations of Quantum Mechanics follow.
 
 # Motivation: Stablizing Strategies of Non-Commutative (Cooperative, Galilean) Relativistic Game Theory
 
-Note:  I will be concentrating on Cooperative Game Theory, in which each agent in the game has the same Utility Function (Review Score) so that the whole system is scored together because it is the easiest path I found to quantum mechanics.  In general, this theory can be generalized to Non-cooperative Game Theory, where each agent has its own Utility Function as well as its own Immediate Score.  I did not concentrate on non-cooperative game theory because I could not find any argument from it that p = m(dx/dt).
+Note:  I will be concentrating on Cooperative Game Theory, in which each agent in the game has the same Utility Function (Accumulated Score) so that the whole system is scored together because it is the easiest path I found to quantum mechanics.  In general, this theory can be generalized to Non-cooperative Game Theory, where each agent has its own Utility Function as well as its own Immediate Score.  I did not concentrate on non-cooperative game theory because I could not find any argument from it that p = m(dx/dt).
 
-The total system in a cooperative game theory has an initial state (initial cause), an endgoal state (final cause), a current state, and a Utility Function (Review Score), which scores the dynamics between the initial state and the current state.
+The total system in a cooperative game theory has an initial state (initial cause), an endgoal state (final cause), a current state, and a Utility Function (Accumulated Score), which scores the dynamics between the initial state and the current state.
 
 The Stabilizing Strategies of a game theory have a final Utility Function (the Utility Function evaluated at the endgoal) which does not at all change when the strategy is infinitesimally perturbed.  This ensures that approximations to the strategies exists.
 
-A Relativistic Game is one whose scores respect a form of relativity.  In the case of Galilean relativity, we have a universal time parameter and we can say that the Utility Function (Review Score), which scores the dynamics between the initial and current state, must be in the form of an integral over time of an Immediate Score.  Additionally, we can say that a game theory respects relativity when the Immediate Score is a constant when available no change in state is preferable.
+A Relativistic Game is one whose scores respect a form of relativity.  In the case of Galilean relativity, we have a universal time parameter and we can say that the Utility Function (Accumulated Score), which scores the dynamics between the initial and current state, must be in the form of an integral over time of an Immediate Score.  Additionally, we can say that a game theory respects relativity when the Immediate Score is a constant when no available change in state is preferable.
 
 A Non-Commutative Game is one in which the variables that appear in the Utility Function do not necessarily commute.  Since I am considering Galilean relativity, I will assume that time, t, is a real number, that change in time, dt, is a positive infinitesimal, and that the curvature of time, d^2t = 0.  I will also assume that x (which is hermitian) and dx are elements of an algebra and have a commutation relation.  I also assume that S(x,t), the Utility Function, and L(x,t), the Immediate Score, commute. 
 
@@ -42,7 +42,7 @@ Defining
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=F&space;=&space;\frac{\partial&space;L}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;=&space;\frac{\partial&space;L}{\partial&space;z}" title="F = \frac{\partial L}{\partial z}" /></a>
 
-Then
+Then F, being the gradient of the Immediate Score with respect to state, is 0 when no change in state is preferable.  Our assumption is that as F->0, L approaches a constant.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=F&space;\to&space;0&space;\implies&space;\frac{dL}{dt}&space;\to&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;\to&space;0&space;\implies&space;\frac{dL}{dt}&space;\to&space;0" title="F \to 0 \implies \frac{dL}{dt} \to 0" /></a>
 
@@ -76,13 +76,21 @@ Definition of Force
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=F&space;:=&space;\frac{\partial&space;L}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;:=&space;\frac{\partial&space;L}{\partial&space;z}" title="F := \frac{\partial L}{\partial z}" /></a>
 
+The Force measures the Gradient of the Immediate Score with respect to State.  The force gives you the direction that state can be changed to most improve the Immediate Score and the rate of this improvement.
+
 Definition of Momentum
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=p&space;:=&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;:=&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" title="p := \frac{\partial L dt}{\partial d z}" /></a>
 
+Note: dz is the Change of State, or the Motion.  dS = Ldt is the Change in Accumulated Score, or the Additional Score.
+
+Since <a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;\frac{\partial&space;dS}{\partial&space;dz}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;\frac{\partial&space;dS}{\partial&space;dz}" title="p = \frac{\partial dS}{\partial dz}" /></a>, the momentum measures the Gradient of the Additional Score with respect to the Change in the Motion.  The momentum tells you the direction that the motion can be changed to most improve the additional score and the rate of this improvement.
+
 The Euler-Lagrange Equation then reads
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=F&space;=&space;\frac{d}{dt}&space;p" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;=&space;\frac{d}{dt}&space;p" title="F = \frac{d}{dt} p" /></a>
+
+The equation says that, for a strategy that stabilizes the accumulated score, the gradient of the immediate score with respect to state is the same as the change with respect to change in time of the gradient of additional score with respect to motion.
 
 ## Alternate form of the Lagrangian
 
@@ -129,6 +137,13 @@ Thus, we get
 
 Where V(x,t) is arbitrary.
 
+If we define
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=T(\frac{dx}{dt})&space;=&space;\frac{1}{2}&space;m&space;\frac{dx^2}{dt^2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?T(\frac{dx}{dt})&space;=&space;\frac{1}{2}&space;m&space;\frac{dx^2}{dt^2}" title="T(\frac{dx}{dt}) = \frac{1}{2} m \frac{dx^2}{dt^2}" /></a>
+
+Then <a href="https://www.codecogs.com/eqnedit.php?latex=L&space;=&space;T&space;-&space;V" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L&space;=&space;T&space;-&space;V" title="L = T - V" /></a>
+
+Since L = T(dx/dt) - V(x,t) is the Immediate Score, we see that T(dx/dt) is the Kinetic part of the Immediate Score (the Immediate Score associated with the immediate motion), or the Kinetic Score (aka Kinetic Energy), and that [-V(x,t)] is the Situational part of the Immediate Score (the Immediate Score associated with the immediate state), or the Situational Score (aka the negative of the Potential Energy).
 
 ## The relationship between x and dx as well as z and p
 
