@@ -4,6 +4,8 @@
 
 A generalization of Lagrangian Mechanics in which we do not assume that x and dx commute.
 
+The Heisenberg Equations of Quantum Mechanics follow.
+
 # Motivation: Stablizing Strategies of Non-Commutative (Cooperative, Galilean) Relativistic Game Theory
 
 The total system in a cooperative game theory has an initial state (initial cause), an endgoal state (final cause), a current state, and a Utility Function (Review Score), which scores the dynamics between the initial state and the current state.
