@@ -146,4 +146,4 @@ Noting that p_x = m (dx/dt)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=d&space;x&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;x}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d&space;x&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;x}" title="d x = -i\frac{\hbar}{m}dt \frac{\partial}{\partial x}" /></a>
 
-By convention, we make hbar real so that positive m implies dx is a generator of forward translation.
+By convention, we make hbar real so that positive m implies dx is hermitian and a generator of forward translation.
