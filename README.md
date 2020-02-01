@@ -76,21 +76,21 @@ Definition of Force
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=F&space;:=&space;\frac{\partial&space;L}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;:=&space;\frac{\partial&space;L}{\partial&space;z}" title="F := \frac{\partial L}{\partial z}" /></a>
 
-The Force measures the Gradient of the Immediate Score with respect to State.  The force gives you the direction that state can be changed to most improve the Immediate Score and the rate of this improvement.
+The Force measures the Gradient of the Immediate Score with respect to State.  The force gives you the direction that state can be changed to most improve the Immediate Score and the rate of this improvement.  Though it is simply called the "force", it is "the motive to change state"
 
 Definition of Momentum
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=p&space;:=&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;:=&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" title="p := \frac{\partial L dt}{\partial d z}" /></a>
 
-Note: dz is the Change of State, or the Motion.  dS = Ldt is the Change in Accumulated Score, or the Additional Score.
+Note: dz is the Change of State, or the Motion.  dS = Ldt is the Change in Accumulated Score, or the Additional Score.  d^2 S = dL dt is the change in the Additional Score.
 
-Since <a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;\frac{\partial&space;dS}{\partial&space;dz}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;\frac{\partial&space;dS}{\partial&space;dz}" title="p = \frac{\partial dS}{\partial dz}" /></a>, the momentum measures the Gradient of the Additional Score with respect to the Change in the Motion.  The momentum tells you the direction that the motion can be changed to most improve the additional score and the rate of this improvement.
+Since <a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;\frac{\partial&space;dS}{\partial&space;dz}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;\frac{\partial&space;dS}{\partial&space;dz}" title="p = \frac{\partial dS}{\partial dz}" /></a>, the momentum measures the Gradient of the Additional Score with respect to the Motion.  The momentum tells you the direction that the motion can be changed to most improve the additional score and the rate of this improvement.  Though it is called the "momentum", it is the "motive to change motion".
 
 The Euler-Lagrange Equation then reads
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=F&space;=&space;\frac{d}{dt}&space;p" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;=&space;\frac{d}{dt}&space;p" title="F = \frac{d}{dt} p" /></a>
 
-The equation says that, for a strategy that stabilizes the accumulated score, the gradient of the immediate score with respect to state is the same as the change with respect to change in time of the gradient of additional score with respect to motion.
+The equation says that, for a strategy that stabilizes the final accumulated score, the motive to change state is equal to the change in time of the motive to change motion.
 
 ## Alternate form of the Lagrangian
 
