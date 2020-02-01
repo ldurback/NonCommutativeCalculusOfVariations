@@ -32,11 +32,11 @@ Let S_i(z) be agent_i's Utility Function
 
 The agent_i's stategy stabilizes S_i(z_final).
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\delta_i&space;S_i&space;=&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta_i&space;S_i&space;=&space;0" title="\delta_i S_i = 0" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\delta_i&space;S_i(z_{final})&space;=&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta_i&space;S_i(z_{final})&space;=&space;0" title="\delta_i S_i(z_{final}) = 0" /></a>
 
 S_i(z) is the integral from the initial state to the final state of L_i(x, t, dx/dt), agent_i's Immediate Score, or agent_i's Lagrangian, over time.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=S_i(z_{final})&space;=&space;\int_{z_{init}}^{z_{final}}&space;L_i(x,t,\frac{dx}{dt})&space;dt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S_i(z_{final})&space;=&space;\int_{z_{init}}^{z_{final}}&space;L_i(x,t,\frac{dx}{dt})&space;dt" title="S_i(z_{final}) = \int_{z_{init}}^{z_{final}} L_i(x,t,\frac{dx}{dt}) dt" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=S_i(z)&space;=&space;\int_{z_{init}}^{z}&space;L_i(x,t,\frac{dx}{dt})&space;dt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S_i(z)&space;=&space;\int_{z_{init}}^{z}&space;L_i(x,t,\frac{dx}{dt})&space;dt" title="S_i(z) = \int_{z_{init}}^{z} L_i(x,t,\frac{dx}{dt}) dt" /></a>
 
 Defining
 
