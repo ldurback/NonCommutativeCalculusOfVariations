@@ -70,15 +70,15 @@ which we can rewrite as
 
 Definition of Force
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=F_i&space;:=&space;\frac{\partial&space;L_i}{\partial&space;z_i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F_i&space;:=&space;\frac{\partial&space;L_i}{\partial&space;z_i}" title="F_i := \frac{\partial L_i}{\partial z_i}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=F&space;:=&space;\frac{\partial&space;L}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;:=&space;\frac{\partial&space;L}{\partial&space;z}" title="F := \frac{\partial L}{\partial z}" /></a>
 
 Definition of Momentum
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=p_i&space;:=&space;\frac{\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_i&space;:=&space;\frac{\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}" title="p_i := \frac{\partial L_i dt}{\partial d z_i}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;:=&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;:=&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" title="p := \frac{\partial L dt}{\partial d z}" /></a>
 
 The Euler-Lagrange Equation then reads
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=F_i&space;=&space;\frac{d}{dt}&space;p_i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F_i&space;=&space;\frac{d}{dt}&space;p_i" title="F_i = \frac{d}{dt} p_i" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=F&space;=&space;\frac{d}{dt}&space;p" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;=&space;\frac{d}{dt}&space;p" title="F = \frac{d}{dt} p" /></a>
 
 ## Alternate form of the Lagrangian
 
