@@ -2,11 +2,11 @@
 
 # Non-Commutative Lagrangian Mechanics
 
-A generalization of Lagrangian Mechanics in which each particle has its own Action and where we do not assume that x and dx commute.
+A generalization of Lagrangian Mechanics in which we do not assume that x and dx commute.
 
-# Motivation: Stablizing Strategies of Non-Commutative (Galilean) Relativistic Game Theory
+# Motivation: Stablizing Strategies of Non-Commutative (Cooperative, Galilean) Relativistic Game Theory
 
-Each agent in a game theory has an initial state (initial cause), an endgoal state (final cause), a current state, and a Utility Function (life-review score), which scores the dynamics between the initial state and the current state.
+The total system in a cooperative game theory has an initial state (initial cause), an endgoal state (final cause), a current state, and a Utility Function (Review Score), which scores the dynamics between the initial state and the current state.
 
 The Stabilizing Strategies of a game theory have a final Utility Function (the Utility Function evaluated at the endgoal) which does not at all change when the strategy is infinitesimally perturbed.  This ensures that approximations to the strategies exists.
 
@@ -18,57 +18,53 @@ A Non-Commutative Game is one in which the variables that appear in the Utility 
 
 t, time, is a real number.  dt, the change in time, is a positive real number.  d^2 t = 0.
 
-For each object/agent i:  x_i and dx_i are elements of a non-commutative algebra.  x_i and x_j commute.  dx_i and dx_j commute.  x_i and dx_j commute only if x != j.
-
-Let x = (x_1, ..., x_n) where n is the number of objects/agents in the system.
+x and dx are elements of a non-commutative algebra with a commutation relation between them.
 
 Let z = (x,t) be the state of the system
 
-Let z_i = (x_i, t) be the state of agent_i.
-
 The system progresses from an fixed initial state (the initial cause) to a fixed final state (the final cause, or goal state).
 
-Let S_i(z) be agent_i's Utility Function
+Let S(z) be the system's Utility Function
 
-The agent_i's stategy stabilizes S_i(z_final).
+The stategies of all agents stabilizes S(z_final).
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\delta_i&space;S_i(z_{final})&space;=&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta_i&space;S_i(z_{final})&space;=&space;0" title="\delta_i S_i(z_{final}) = 0" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\delta&space;S(z_{final})&space;=&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta&space;S(z_{final})&space;=&space;0" title="\delta S(z_{final}) = 0" /></a>
 
-S_i(z) is the integral from the initial state to the final state of L_i(x, t, dx/dt), agent_i's Immediate Score, or agent_i's Lagrangian, over time.
+S(z) is the integral from the initial state to the final state of L(x, t, dx/dt), the Immediate Score, or Lagrangian, over time.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=S_i(z)&space;=&space;\int_{z_{init}}^{z}&space;L_i(x,t,\frac{dx}{dt})&space;dt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S_i(z)&space;=&space;\int_{z_{init}}^{z}&space;L_i(x,t,\frac{dx}{dt})&space;dt" title="S_i(z) = \int_{z_{init}}^{z} L_i(x,t,\frac{dx}{dt}) dt" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=S(z)&space;=&space;\int_{z_{init}}^{z}&space;L(x,t,\frac{dx}{dt})&space;dt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S(z)&space;=&space;\int_{z_{init}}^{z}&space;L(x,t,\frac{dx}{dt})&space;dt" title="S(z) = \int_{z_{init}}^{z} L(x,t,\frac{dx}{dt}) dt" /></a>
 
 Defining
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=F_i&space;=&space;\frac{\partial&space;L_i}{\partial&space;z_i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F_i&space;=&space;\frac{\partial&space;L_i}{\partial&space;z_i}" title="F_i = \frac{\partial L_i}{\partial z_i}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=F&space;=&space;\frac{\partial&space;L}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;=&space;\frac{\partial&space;L}{\partial&space;z}" title="F = \frac{\partial L}{\partial z}" /></a>
 
 Then
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=F_i&space;\to&space;0&space;\implies&space;\frac{dL_i}{dt}&space;\to&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F_i&space;\to&space;0&space;\implies&space;\frac{dL_i}{dt}&space;\to&space;0" title="F_i \to 0 \implies \frac{dL_i}{dt} \to 0" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=F&space;\to&space;0&space;\implies&space;\frac{dL}{dt}&space;\to&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;\to&space;0&space;\implies&space;\frac{dL}{dt}&space;\to&space;0" title="F \to 0 \implies \frac{dL}{dt} \to 0" /></a>
 
 ## Euler-Lagrange Equations
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=0&space;=&space;\delta_i&space;S_i(z_{final})&space;=&space;\delta_i&space;\int_{z_{init}}^{z_{final}}&space;L_i&space;dt&space;=&space;\int_{z_{init}}^{z_{final}}&space;\delta_i(L_idt)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?0&space;=&space;\delta_i&space;S_i(z_{final})&space;=&space;\delta_i&space;\int_{z_{init}}^{z_{final}}&space;L_i&space;dt&space;=&space;\int_{z_{init}}^{z_{final}}&space;\delta_i(L_idt)" title="0 = \delta_i S_i(z_{final}) = \delta_i \int_{z_{init}}^{z_{final}} L_i dt = \int_{z_{init}}^{z_{final}} \delta_i(L_idt)" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=0&space;=&space;\delta&space;S(z_{final})&space;=&space;\delta&space;\int_{z_{init}}^{z_{final}}&space;L&space;dt&space;=&space;\int_{z_{init}}^{z_{final}}&space;\delta(L&space;dt)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?0&space;=&space;\delta&space;S(z_{final})&space;=&space;\delta&space;\int_{z_{init}}^{z_{final}}&space;L&space;dt&space;=&space;\int_{z_{init}}^{z_{final}}&space;\delta(L&space;dt)" title="0 = \delta S(z_{final}) = \delta \int_{z_{init}}^{z_{final}} L dt = \int_{z_{init}}^{z_{final}} \delta(L dt)" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\int_{z_{init}}^{z_{final}}&space;\delta_i(L_idt)&space;=&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L_i&space;dt}{\partial&space;z_i}&space;\cdot&space;\delta&space;z_i&space;&plus;&space;\frac{\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}&space;\cdot&space;\delta&space;d&space;z_i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\int_{z_{init}}^{z_{final}}&space;\delta_i(L_idt)&space;=&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L_i&space;dt}{\partial&space;z_i}&space;\cdot&space;\delta&space;z_i&space;&plus;&space;\frac{\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}&space;\cdot&space;\delta&space;d&space;z_i" title="\int_{z_{init}}^{z_{final}} \delta_i(L_idt) = \int_{z_{init}}^{z_{final}} \frac{\partial L_i dt}{\partial z_i} \cdot \delta z_i + \frac{\partial L_i dt}{\partial d z_i} \cdot \delta d z_i" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\int_{z_{init}}^{z_{final}}&space;\delta(L&space;dt)&space;=&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}&space;\cdot&space;\delta&space;d&space;z" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\int_{z_{init}}^{z_{final}}&space;\delta(L&space;dt)&space;=&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}&space;\cdot&space;\delta&space;d&space;z" title="\int_{z_{init}}^{z_{final}} \delta(L dt) = \int_{z_{init}}^{z_{final}} \frac{\partial L dt}{\partial z} \cdot \delta z + \frac{\partial L dt}{\partial d z} \cdot \delta d z" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex==&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L_i&space;dt}{\partial&space;z_i}&space;\cdot&space;\delta&space;z_i&space;&plus;&space;\frac{\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}&space;\cdot&space;d&space;\delta&space;z_i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L_i&space;dt}{\partial&space;z_i}&space;\cdot&space;\delta&space;z_i&space;&plus;&space;\frac{\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}&space;\cdot&space;d&space;\delta&space;z_i" title="= \int_{z_{init}}^{z_{final}} \frac{\partial L_i dt}{\partial z_i} \cdot \delta z_i + \frac{\partial L_i dt}{\partial d z_i} \cdot d \delta z_i" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex==&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}&space;\cdot&space;d&space;\delta&space;z" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}&space;\cdot&space;d&space;\delta&space;z" title="= \int_{z_{init}}^{z_{final}} \frac{\partial L dt}{\partial z} \cdot \delta z + \frac{\partial L dt}{\partial d z} \cdot d \delta z" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex==&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L_i&space;dt}{\partial&space;z_i}&space;\cdot&space;\delta&space;z_i&space;&plus;&space;[d(\frac{\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}&space;\cdot&space;\delta&space;z_i)&space;-&space;d(\frac{\partial&space;L_i&space;dt}{\partial&space;d&space;z_i})&space;\cdot&space;\delta&space;z_i]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L_i&space;dt}{\partial&space;z_i}&space;\cdot&space;\delta&space;z_i&space;&plus;&space;[d(\frac{\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}&space;\cdot&space;\delta&space;z_i)&space;-&space;d(\frac{\partial&space;L_i&space;dt}{\partial&space;d&space;z_i})&space;\cdot&space;\delta&space;z_i]" title="= \int_{z_{init}}^{z_{final}} \frac{\partial L_i dt}{\partial z_i} \cdot \delta z_i + [d(\frac{\partial L_i dt}{\partial d z_i} \cdot \delta z_i) - d(\frac{\partial L_i dt}{\partial d z_i}) \cdot \delta z_i]" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex==&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;[d(\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}&space;\cdot&space;\delta&space;z)&space;-&space;d(\frac{\partial&space;L&space;dt}{\partial&space;d&space;z})&space;\cdot&space;\delta&space;z]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;[d(\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}&space;\cdot&space;\delta&space;z)&space;-&space;d(\frac{\partial&space;L&space;dt}{\partial&space;d&space;z})&space;\cdot&space;\delta&space;z]" title="= \int_{z_{init}}^{z_{final}} \frac{\partial L dt}{\partial z} \cdot \delta z + [d(\frac{\partial L dt}{\partial d z} \cdot \delta z) - d(\frac{\partial L dt}{\partial d z}) \cdot \delta z]" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex==&space;\int_{z_{init}}^{z_{final}}&space;[\frac{\partial&space;L_i&space;dt}{\partial&space;z_i}&space;-&space;\frac{d&space;\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}]&space;\cdot&space;\delta&space;z_i&space;&plus;&space;[\frac{\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}&space;\cdot&space;\delta&space;z_i]_{z_{init}}^{z_{final}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=&space;\int_{z_{init}}^{z_{final}}&space;[\frac{\partial&space;L_i&space;dt}{\partial&space;z_i}&space;-&space;\frac{d&space;\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}]&space;\cdot&space;\delta&space;z_i&space;&plus;&space;[\frac{\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}&space;\cdot&space;\delta&space;z_i]_{z_{init}}^{z_{final}}" title="= \int_{z_{init}}^{z_{final}} [\frac{\partial L_i dt}{\partial z_i} - \frac{d \partial L_i dt}{\partial d z_i}] \cdot \delta z_i + [\frac{\partial L_i dt}{\partial d z_i} \cdot \delta z_i]_{z_{init}}^{z_{final}}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex==&space;\int_{z_{init}}^{z_{final}}&space;[\frac{\partial&space;L&space;dt}{\partial&space;z}&space;-&space;\frac{d&space;\partial&space;L&space;dt}{\partial&space;d&space;z}]&space;\cdot&space;\delta&space;z&space;&plus;&space;[\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}&space;\cdot&space;\delta&space;z]_{z_{init}}^{z_{final}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=&space;\int_{z_{init}}^{z_{final}}&space;[\frac{\partial&space;L&space;dt}{\partial&space;z}&space;-&space;\frac{d&space;\partial&space;L&space;dt}{\partial&space;d&space;z}]&space;\cdot&space;\delta&space;z&space;&plus;&space;[\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}&space;\cdot&space;\delta&space;z]_{z_{init}}^{z_{final}}" title="= \int_{z_{init}}^{z_{final}} [\frac{\partial L dt}{\partial z} - \frac{d \partial L dt}{\partial d z}] \cdot \delta z + [\frac{\partial L dt}{\partial d z} \cdot \delta z]_{z_{init}}^{z_{final}}" /></a>
 
 Since the end points are not varied, the last term here is 0
 
-<a href="https://www.codecogs.com/eqnedit.php?latex==&space;\int_{z_{init}}^{z_{final}}&space;[\frac{\partial&space;L_i&space;dt}{\partial&space;z_i}&space;-&space;\frac{d&space;\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}]&space;\cdot&space;\delta&space;z_i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=&space;\int_{z_{init}}^{z_{final}}&space;[\frac{\partial&space;L_i&space;dt}{\partial&space;z_i}&space;-&space;\frac{d&space;\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}]&space;\cdot&space;\delta&space;z_i" title="= \int_{z_{init}}^{z_{final}} [\frac{\partial L_i dt}{\partial z_i} - \frac{d \partial L_i dt}{\partial d z_i}] \cdot \delta z_i" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex==&space;\int_{z_{init}}^{z_{final}}&space;[\frac{\partial&space;L&space;dt}{\partial&space;z}&space;-&space;\frac{d&space;\partial&space;L&space;dt}{\partial&space;d&space;z}]&space;\cdot&space;\delta&space;z" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=&space;\int_{z_{init}}^{z_{final}}&space;[\frac{\partial&space;L&space;dt}{\partial&space;z}&space;-&space;\frac{d&space;\partial&space;L&space;dt}{\partial&space;d&space;z}]&space;\cdot&space;\delta&space;z" title="= \int_{z_{init}}^{z_{final}} [\frac{\partial L dt}{\partial z} - \frac{d \partial L dt}{\partial d z}] \cdot \delta z" /></a>
 
 Noting that the variation is arbitrary gives us the Euler-Lagrange equation
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\partial&space;L_i&space;dt}{\partial&space;z_i}&space;=&space;\frac{d&space;\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;L_i&space;dt}{\partial&space;z_i}&space;=&space;\frac{d&space;\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}" title="\frac{\partial L_i dt}{\partial z_i} = \frac{d \partial L_i dt}{\partial d z_i}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\partial&space;L&space;dt}{\partial&space;z}&space;=&space;\frac{d&space;\partial&space;L&space;dt}{\partial&space;d&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;L&space;dt}{\partial&space;z}&space;=&space;\frac{d&space;\partial&space;L&space;dt}{\partial&space;d&space;z}" title="\frac{\partial L dt}{\partial z} = \frac{d \partial L dt}{\partial d z}" /></a>
 
 which we can rewrite as
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\partial&space;L_i}{\partial&space;z_i}&space;=&space;\frac{d}{dt}\frac{\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;L_i}{\partial&space;z_i}&space;=&space;\frac{d}{dt}\frac{\partial&space;L_i&space;dt}{\partial&space;d&space;z_i}" title="\frac{\partial L_i}{\partial z_i} = \frac{d}{dt}\frac{\partial L_i dt}{\partial d z_i}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\partial&space;L}{\partial&space;z}&space;=&space;\frac{d}{dt}\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;L}{\partial&space;z}&space;=&space;\frac{d}{dt}\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" title="\frac{\partial L}{\partial z} = \frac{d}{dt}\frac{\partial L dt}{\partial d z}" /></a>
 
 ## Force and Momentum
 
