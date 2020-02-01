@@ -1,8 +1,10 @@
-# Stablizing Strategies of Non-Commutative (Galilean) Relativistic Game Theory
+# Non-Commutative Calculus of Variations
+
+# Non-Commutative Lagrangian Mechanics
 
 A generalization of Lagrangian Mechanics in which each particle has its own Action and where we do not assume that x and dx commute.
 
-# Motivation
+# Motivation: Stablizing Strategies of Non-Commutative (Galilean) Relativistic Game Theory
 
 Each agent in a game theory has an initial state (initial cause), an endgoal state (final cause), a current state, and a Utility Function (life-review score), which scores the dynamics between the initial state and the current state.
 
@@ -16,31 +18,33 @@ A Non-Commutative Game is one in which the variables that appear in the Utility 
 
 t, time, is a real number.  dt, the change in time, is a positive real number.  d^2 t = 0.
 
-The system is progresses from a fixed initial state (the initial cause) to a fixed final state (the final cause, or goal state).
+For each object/agent i:  x_i and dx_i are elements of a non-commutative algebra.  x_i and x_j commute.  dx_i and dx_j commute.  x_i and dx_j commute only if x != j.
 
-The system's dynamics stabilize the Action, S.
+Let x = (x_1, ..., x_n) where n is the number of objects/agents in the system.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\delta&space;S&space;=&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta&space;S&space;=&space;0" title="\delta S = 0" /></a>
+Let z = (x,t) be the state of the system
 
-S is the integral from the initial state to the final state of L, the Lagrangian, over time.
+Let z_i = (x_i, t) be the state of agent_i.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=S&space;=&space;\int_{init}^{final}&space;L&space;dt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S&space;=&space;\int_{init}^{final}&space;L&space;dt" title="S = \int_{init}^{final} L dt" /></a>
+The system progresses from an fixed initial state (the initial cause) to a fixed final state (the final cause, or goal state).
 
-L is a function of (x, t, dx/dt)
+Let S_i(z) be agent_i's Utility Function
 
-x and dx are elements of a (non-commutative) algebra and have a commutation relation.
+The agent_i's stategy stabilizes S_i(z_final).
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\delta_i&space;S_i&space;=&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta_i&space;S_i&space;=&space;0" title="\delta_i S_i = 0" /></a>
+
+S_i(z) is the integral from the initial state to the final state of L_i(x, t, dx/dt), agent_i's Immediate Score, or agent_i's Lagrangian, over time.
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=S_i(z_{final})&space;=&space;\int_{z_{init}}^{z_{final}}&space;L_i(x,t,\frac{dx}{dt})&space;dt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S_i(z_{final})&space;=&space;\int_{z_{init}}^{z_{final}}&space;L_i(x,t,\frac{dx}{dt})&space;dt" title="S_i(z_{final}) = \int_{z_{init}}^{z_{final}} L_i(x,t,\frac{dx}{dt}) dt" /></a>
 
 Defining
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=z&space;=&space;(x,t)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?z&space;=&space;(x,t)" title="z = (x,t)" /></a>
-
-and
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=F&space;=&space;\frac{\partial&space;L}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;=&space;\frac{\partial&space;L}{\partial&space;z}" title="F = \frac{\partial L}{\partial z}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=F_i&space;=&space;\frac{\partial&space;L_i}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F_i&space;=&space;\frac{\partial&space;L_i}{\partial&space;z}" title="F_i = \frac{\partial L_i}{\partial z}" /></a>
 
 Then
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=F&space;\to&space;0&space;\implies&space;\frac{dL}{dt}&space;\to&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F&space;\to&space;0&space;\implies&space;\frac{dL}{dt}&space;\to&space;0" title="F \to 0 \implies \frac{dL}{dt} \to 0" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=F_i&space;\to&space;0&space;\implies&space;\frac{dL_i}{dt}&space;\to&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F_i&space;\to&space;0&space;\implies&space;\frac{dL_i}{dt}&space;\to&space;0" title="F_i \to 0 \implies \frac{dL_i}{dt} \to 0" /></a>
 
 ## Euler-Lagrange Equations
 
