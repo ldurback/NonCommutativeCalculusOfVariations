@@ -222,4 +222,4 @@ Define
 
 To get
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=-i&space;\hbar&space;\frac{d}{dt}&space;f&space;=&space;\langle\{&space;H,&space;f&space;\}\rangle" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-i&space;\hbar&space;\frac{d}{dt}&space;f&space;=&space;\langle\{&space;H,&space;f&space;\}\rangle" title="-i \hbar \frac{d}{dt} f = \langle\{ H, f \}\rangle" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=-i&space;\hbar&space;\frac{d}{dt}&space;f&space;=&space;\langle\{&space;p_t,&space;f&space;\}\rangle" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-i&space;\hbar&space;\frac{d}{dt}&space;f&space;=&space;\langle\{&space;p_t,&space;f&space;\}\rangle" title="-i \hbar \frac{d}{dt} f = \langle\{ p_t, f \}\rangle" /></a>
