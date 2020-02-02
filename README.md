@@ -176,7 +176,7 @@ Noting that p_x = m (dx/dt)
 
 By convention, we make hbar real so that positive m implies dx is hermitian and a generator of forward translation.
 
-## TO DO:  Hamiltonian Mechanics
+## The Hamiltonian
 
 Defining
 
@@ -190,7 +190,11 @@ We also get the Hamiltonian Equations
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{dp_x}{dt}&space;=&space;-\frac{\partial&space;H}{\partial&space;x}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{dp_x}{dt}&space;=&space;-\frac{\partial&space;H}{\partial&space;x}" title="\frac{dp_x}{dt} = -\frac{\partial H}{\partial x}" /></a>
 
-## TO DO:  Poisson Brackets
+And we get
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=H=i\hbar\frac{\partial}{\partial&space;t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H=i\hbar\frac{\partial}{\partial&space;t}" title="H=i\hbar\frac{\partial}{\partial t}" /></a>
+
+## Equation of Motion
 
 Consider a dynamical variable f(x,p_x,t).  We have
 
@@ -202,5 +206,10 @@ Define the Possion bracket as
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\{f,g\}=&space;\frac{\partial&space;f}{\partial&space;x}&space;\cdot&space;\frac{\partial&space;g}{\partial&space;p_x}&space;-&space;\frac{\partial&space;f}{\partial&space;p_x}&space;\cdot&space;\frac{\partial&space;g}{\partial&space;x}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\{f,g\}=&space;\frac{\partial&space;f}{\partial&space;x}&space;\cdot&space;\frac{\partial&space;g}{\partial&space;p_x}&space;-&space;\frac{\partial&space;f}{\partial&space;p_x}&space;\cdot&space;\frac{\partial&space;g}{\partial&space;x}" title="\{f,g\}= \frac{\partial f}{\partial x} \cdot \frac{\partial g}{\partial p_x} - \frac{\partial f}{\partial p_x} \cdot \frac{\partial g}{\partial x}" /></a>
 
-Then
+And recall
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=H=i\hbar\frac{\partial}{\partial&space;t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H=i\hbar\frac{\partial}{\partial&space;t}" title="H=i\hbar\frac{\partial}{\partial t}" /></a>
+
+We therefore have
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{d}{dt}&space;f(x,p_x,t)=&space;-\{&space;H,f&space;\}&space;&plus;&space;\frac{1}{i&space;\hbar}[H,f]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{d}{dt}&space;f(x,p_x,t)=&space;-\{&space;H,f&space;\}&space;&plus;&space;\frac{1}{i&space;\hbar}[H,f]" title="\frac{d}{dt} f(x,p_x,t)= -\{ H,f \} + \frac{1}{i \hbar}[H,f]" /></a>
