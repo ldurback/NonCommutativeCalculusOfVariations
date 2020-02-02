@@ -101,6 +101,10 @@ The equation says that, for a strategy that stabilizes the final accumulated sco
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=L&space;=&space;p&space;\cdot&space;\frac{dz}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L&space;=&space;p&space;\cdot&space;\frac{dz}{dt}" title="L = p \cdot \frac{dz}{dt}" /></a>
 
+Note:  Since L = dS/dt, this implies
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;\frac{\partial&space;S}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;\frac{\partial&space;S}{\partial&space;z}" title="p = \frac{\partial S}{\partial z}" /></a>
+
 ## The Form of the Kinetic Energy and x-Momentum
 
 According to our assumptions, in the event that F -> 0, we have that dL/dt = d^2S/dt^2 -> 0.
@@ -167,4 +171,19 @@ Noting that p_x = m (dx/dt)
 
 By convention, we make hbar real so that positive m implies dx is hermitian and a generator of forward translation.
 
-## TO DO:  Poission Brackets
+## TO DO:  Hamiltonian Mechanics
+
+Defining
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=H&space;=&space;p_x&space;\cdot&space;\frac{dx}{dt}&space;-&space;L" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H&space;=&space;p_x&space;\cdot&space;\frac{dx}{dt}&space;-&space;L" title="H = p_x \cdot \frac{dx}{dt} - L" /></a>
+
+as the Legendre transform of L, we see that H is a function of (x,p_x,t) and H = -p_t.
+
+We also get the Hamiltonian Equations
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{dx}{dt}&space;=&space;\frac{\partial&space;H}{\partial&space;p_x}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{dx}{dt}&space;=&space;\frac{\partial&space;H}{\partial&space;p_x}" title="\frac{dx}{dt} = \frac{\partial H}{\partial p_x}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{dp_x}{dt}&space;=&space;-\frac{\partial&space;H}{\partial&space;x}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{dp_x}{dt}&space;=&space;-\frac{\partial&space;H}{\partial&space;x}" title="\frac{dp_x}{dt} = -\frac{\partial H}{\partial x}" /></a>
+
+## TO DO:  Poisson Brackets
+
