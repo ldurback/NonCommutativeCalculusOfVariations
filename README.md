@@ -130,27 +130,31 @@ Since p_x is arbitrary, we have
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{d^2&space;x}{dt^2}&space;\to&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{d^2&space;x}{dt^2}&space;\to&space;0" title="\frac{d^2 x}{dt^2} \to 0" /></a>
 
-The only Lagrangian consistent with d^2x/dt^2 = 0 is L = k (dx/dt)^2 for some proportionality constant k.  Defining m as 2k, we get that as F -> 0
+The only Lagrangian consistent with d^2x/dt^2 = 0 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=L&space;\to&space;\frac{1}{2}&space;m&space;\frac{dx^2}{dt^2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L&space;\to&space;\frac{1}{2}&space;m&space;\frac{dx^2}{dt^2}" title="L \to \frac{1}{2} m \frac{dx^2}{dt^2}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=L&space;=&space;\frac{dx}{dt}&space;\cdot&space;k&space;\cdot&space;\frac{dx}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L&space;=&space;\frac{dx}{dt}&space;\cdot&space;k&space;\cdot&space;\frac{dx}{dt}" title="L = \frac{dx}{dt} \cdot k \cdot \frac{dx}{dt}" /></a>
+
+for some proportionality constant k.  Defining m = 2k, we get that as F -> 0
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=L&space;\to&space;\frac{1}{2}&space;\frac{dx}{dt}&space;\cdot&space;m&space;\cdot&space;\frac{dx}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L&space;\to&space;\frac{1}{2}&space;\frac{dx}{dt}&space;\cdot&space;m&space;\cdot&space;\frac{dx}{dt}" title="L \to \frac{1}{2} \frac{dx}{dt} \cdot m \cdot \frac{dx}{dt}" /></a>
 
 Note
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=p_x&space;=&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;dx}&space;=&space;\frac{\partial&space;L}{\partial&space;\frac{dx}{dt}}&space;\to&space;m&space;\frac{dx}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_x&space;=&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;dx}&space;=&space;\frac{\partial&space;L}{\partial&space;\frac{dx}{dt}}&space;\to&space;m&space;\frac{dx}{dt}" title="p_x = \frac{\partial L \cdot dt}{\partial dx} = \frac{\partial L}{\partial \frac{dx}{dt}} \to m \frac{dx}{dt}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=p_x&space;=&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;dx}&space;=&space;\frac{\partial&space;L}{\partial&space;\frac{dx}{dt}}&space;\to&space;m&space;\cdot&space;\frac{dx}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_x&space;=&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;dx}&space;=&space;\frac{\partial&space;L}{\partial&space;\frac{dx}{dt}}&space;\to&space;m&space;\cdot&space;\frac{dx}{dt}" title="p_x = \frac{\partial L \cdot dt}{\partial dx} = \frac{\partial L}{\partial \frac{dx}{dt}} \to m \cdot \frac{dx}{dt}" /></a>
 
 Since p_x is independent of F, we get that regardless of F
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=p_x&space;=&space;\frac{\partial&space;L}{\partial&space;\frac{dx}{dt}}=&space;m&space;\frac{dx}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_x&space;=&space;\frac{\partial&space;L}{\partial&space;\frac{dx}{dt}}=&space;m&space;\frac{dx}{dt}" title="p_x = \frac{\partial L}{\partial \frac{dx}{dt}}= m \frac{dx}{dt}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=p_x&space;=&space;\frac{\partial&space;L}{\partial&space;\frac{dx}{dt}}=&space;m&space;\cdot&space;\frac{dx}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_x&space;=&space;\frac{\partial&space;L}{\partial&space;\frac{dx}{dt}}=&space;m&space;\cdot&space;\frac{dx}{dt}" title="p_x = \frac{\partial L}{\partial \frac{dx}{dt}}= m \cdot \frac{dx}{dt}" /></a>
 
 Thus, we get
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=L&space;=&space;\frac{1}{2}m\frac{dx^2}{dt^2}&space;-&space;V(x,t)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L&space;=&space;\frac{1}{2}m\frac{dx^2}{dt^2}&space;-&space;V(x,t)" title="L = \frac{1}{2}m\frac{dx^2}{dt^2} - V(x,t)" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=L&space;=&space;\frac{1}{2}\frac{dx}{dt}\cdot&space;m&space;\cdot&space;\frac{dx}{dt}&space;-&space;V(x,t)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L&space;=&space;\frac{1}{2}\frac{dx}{dt}\cdot&space;m&space;\cdot&space;\frac{dx}{dt}&space;-&space;V(x,t)" title="L = \frac{1}{2}\frac{dx}{dt}\cdot m \cdot \frac{dx}{dt} - V(x,t)" /></a>
 
 Where V(x,t) is arbitrary.
 
 If we define
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=T(\frac{dx}{dt})&space;=&space;\frac{1}{2}&space;m&space;\frac{dx^2}{dt^2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?T(\frac{dx}{dt})&space;=&space;\frac{1}{2}&space;m&space;\frac{dx^2}{dt^2}" title="T(\frac{dx}{dt}) = \frac{1}{2} m \frac{dx^2}{dt^2}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=T(\frac{dx}{dt})&space;=&space;\frac{1}{2}&space;\frac{dx}{dt}&space;\cdot&space;m&space;\cdot&space;\frac{dx}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?T(\frac{dx}{dt})&space;=&space;\frac{1}{2}&space;\frac{dx}{dt}&space;\cdot&space;m&space;\cdot&space;\frac{dx}{dt}" title="T(\frac{dx}{dt}) = \frac{1}{2} \frac{dx}{dt} \cdot m \cdot \frac{dx}{dt}" /></a>
 
 Then <a href="https://www.codecogs.com/eqnedit.php?latex=L&space;=&space;T&space;-&space;V" target="_blank"><img src="https://latex.codecogs.com/gif.latex?L&space;=&space;T&space;-&space;V" title="L = T - V" /></a>
 
@@ -172,11 +176,13 @@ Since p is a function of z and dz and the commutation relationship between z and
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;z}" title="p = -i\hbar \frac{\partial}{\partial z}" /></a>
 
-Noting that p_x = m (dx/dt)
+Noting that
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=d&space;x&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;x}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d&space;x&space;=&space;-i\frac{\hbar}{m}dt&space;\frac{\partial}{\partial&space;x}" title="d x = -i\frac{\hbar}{m}dt \frac{\partial}{\partial x}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=p=m&space;\cdot&space;\frac{dx}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p=m&space;\cdot&space;\frac{dx}{dt}" title="p=m \cdot \frac{dx}{dt}" /></a>
 
-By convention, we make hbar real so that positive m implies dx is hermitian and a generator of forward translation.
+<a href="https://www.codecogs.com/eqnedit.php?latex=d&space;x&space;=&space;-i\frac{\hbar}{m}&space;\cdot&space;dt&space;\cdot&space;\frac{\partial}{\partial&space;x}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d&space;x&space;=&space;-i\frac{\hbar}{m}&space;\cdot&space;dt&space;\cdot&space;\frac{\partial}{\partial&space;x}" title="d x = -i\frac{\hbar}{m} \cdot dt \cdot \frac{\partial}{\partial x}" /></a>
+
+By convention, we make hbar real and positive so that positive m implies dx is hermitian and a generator of forward translation.
 
 ## The Hamiltonian (Negative Time-Momentum)
 
