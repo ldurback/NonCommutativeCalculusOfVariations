@@ -6,6 +6,8 @@ A generalization of Lagrangian Mechanics in which we do not assume commutative v
 
 Perhaps the equations of quantum mechanics follow?
 
+There is currently one place where *MAGIC* happens (i.e. one spot in the argument that is very poorly justified).
+
 # Motivation: Stablizing Strategies of Non-Commutative (Cooperative, Galilean) Relativistic Game Theory
 
 Note:  I will be concentrating on Cooperative Game Theory, in which each agent in the game has the same Utility Function (Accumulated Score) so that the whole system is scored together because it is the easiest path I found to quantum mechanics.  In general, this theory can be generalized to Non-cooperative Game Theory, where each agent has its own Utility Function as well as its own Immediate Score.  I did not concentrate on non-cooperative game theory because I could not find any argument from it that p = m(dx/dt).
@@ -154,7 +156,7 @@ Then <a href="https://www.codecogs.com/eqnedit.php?latex=L&space;=&space;T&space
 
 Since L = T(dx/dt) - V(x,t) is the Immediate Score, we see that T(dx/dt) is the Kinetic part of the Immediate Score (the Immediate Score associated with the immediate motion), or the Kinetic Score (aka Kinetic Energy), and that [-V(x,t)] is the Situational part of the Immediate Score (the Immediate Score associated with the immediate state), or the Situational Score (aka the negative of the Potential Energy).
 
-## The relationship between x and dx as well as z and p
+## The relationship between x and dx as well as z and p  (Where the *MAGIC* happens.  VERY poorly justified)
 
 Define
 
