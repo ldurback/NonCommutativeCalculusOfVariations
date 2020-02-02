@@ -2,9 +2,9 @@
 
 # Non-Commutative Lagrangian Mechanics
 
-A generalization of Lagrangian Mechanics in which we do not assume that x and dx commute.
+A generalization of Lagrangian Mechanics in which we do not assume commutative variables
 
-The Heisenberg Equations of Quantum Mechanics follow.
+Perhaps the equations of quantum mechanics follow?
 
 # Motivation: Stablizing Strategies of Non-Commutative (Cooperative, Galilean) Relativistic Game Theory
 
