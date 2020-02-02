@@ -22,7 +22,9 @@ A Non-Commutative Game is one in which the variables that appear in the Utility 
 
 t, time, is a real number.  dt, the change in time, is a positive real number.  d^2 t = 0.
 
-x and dx are elements of a non-commutative algebra with a commutation relation between them.
+x and dx are elements of a non-commutative algebra with a commutation relation between them.  The commutator of x and dx commutes with both x and dx.  x and d^2x commute.  The commutator of dx and d^2x commutes with both dx and d^2x.
+
+Note:  This implies that we have a Fundamental Theorem of Calculus.
 
 Let z = (x,t) be the state of the system
 
