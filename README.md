@@ -40,6 +40,8 @@ S(z) is the integral from the initial state to the final state of L(x, t, dx/dt)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=S(z)&space;=&space;\int_{z_{init}}^{z}&space;L(x,t,\frac{dx}{dt})&space;\cdot&space;dt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S(z)&space;=&space;\int_{z_{init}}^{z}&space;L(x,t,\frac{dx}{dt})&space;\cdot&space;dt" title="S(z) = \int_{z_{init}}^{z} L(x,t,\frac{dx}{dt}) \cdot dt" /></a>
 
+Where the dot product is defined as being half the anti-commutator.
+
 Assume that L and S commute and have derivatives.
 
 Defining
@@ -88,7 +90,7 @@ The Force measures the Gradient of the Immediate Score with respect to State.  T
 
 Definition of Momentum
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;:=&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;:=&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" title="p := \frac{\partial L dt}{\partial d z}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;:=&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;:=&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z}" title="p := \frac{\partial L \cdot dt}{\partial d z}" /></a>
 
 Since <a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;\frac{\partial&space;dS}{\partial&space;dz}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;\frac{\partial&space;dS}{\partial&space;dz}" title="p = \frac{\partial dS}{\partial dz}" /></a>, the momentum measures the Gradient of the Additional Score with respect to the Motion.  The momentum tells you the direction that the motion can be changed to most improve the additional score and the rate of this improvement.  Though it is called the "momentum", it is the "profit of changing motion".
 
