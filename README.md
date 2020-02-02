@@ -215,3 +215,11 @@ And recall
 We therefore have
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=-i&space;\hbar&space;\frac{d}{dt}&space;f(x,p_x,t)=&space;-i\hbar\{&space;p_t,f&space;\}&space;&plus;&space;[p_t,f]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-i&space;\hbar&space;\frac{d}{dt}&space;f(x,p_x,t)=&space;-i\hbar\{&space;p_t,f&space;\}&space;&plus;&space;[p_t,f]" title="-i \hbar \frac{d}{dt} f(x,p_x,t)= -i\hbar\{ p_t,f \} + [p_t,f]" /></a>
+
+Define
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\langle\{&space;f,g&space;\}\rangle&space;=&space;[f,g]-i\hbar\{f,g\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\langle\{&space;f,g&space;\}\rangle&space;=&space;[f,g]-i\hbar\{f,g\}" title="\langle\{ f,g \}\rangle = [f,g]-i\hbar\{f,g\}" /></a>
+
+To get
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=-i&space;\hbar&space;\frac{d}{dt}&space;f&space;=&space;\langle\{&space;H,&space;f&space;\}\rangle" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-i&space;\hbar&space;\frac{d}{dt}&space;f&space;=&space;\langle\{&space;H,&space;f&space;\}\rangle" title="-i \hbar \frac{d}{dt} f = \langle\{ H, f \}\rangle" /></a>
