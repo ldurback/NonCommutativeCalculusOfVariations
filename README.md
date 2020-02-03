@@ -192,9 +192,13 @@ Implies
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=p_t&space;=&space;-i&space;\hbar&space;\frac{\partial}{\partial&space;t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_t&space;=&space;-i&space;\hbar&space;\frac{\partial}{\partial&space;t}" title="p_t = -i \hbar \frac{\partial}{\partial t}" /></a>
 
-Thus, for any dynamical variable f, we have
+Thus, for any dynamical variable f(x,p_x) which does not depend on time, we have
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{d}{dt}&space;f&space;=&space;-\frac{1}{i&space;\hbar}[p_t,f]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{d}{dt}&space;f&space;=&space;-\frac{1}{i&space;\hbar}[p_t,f]" title="\frac{d}{dt} f = -\frac{1}{i \hbar}[p_t,f]" /></a>
 
+And for a general f(x,p_x,t)
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{d}{dt}&space;f&space;=&space;-\frac{1}{i&space;\hbar}[p_t,f]&space;&plus;&space;\frac{\partial&space;f}{\partial&space;t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{d}{dt}&space;f&space;=&space;-\frac{1}{i&space;\hbar}[p_t,f]&space;&plus;&space;\frac{\partial&space;f}{\partial&space;t}" title="\frac{d}{dt} f = -\frac{1}{i \hbar}[p_t,f] + \frac{\partial f}{\partial t}" /></a>
 
 ## The Hamiltonian (Negative Time-Momentum)
 
@@ -224,10 +228,15 @@ Consider a dynamical variable f(x,p_x,t).  We have
 
 <a href="https://www.codecogs.com/eqnedit.php?latex==&space;-\frac{\partial&space;f}{\partial&space;x}&space;\cdot&space;\frac{\partial&space;p_t}{\partial&space;p_x}&space;&plus;&space;\frac{\partial&space;f}{\partial&space;p_x}&space;\cdot&space;\frac{\partial&space;p_t}{\partial&space;x}&space;&plus;&space;\frac{\partial&space;f}{\partial&space;t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=&space;-\frac{\partial&space;f}{\partial&space;x}&space;\cdot&space;\frac{\partial&space;p_t}{\partial&space;p_x}&space;&plus;&space;\frac{\partial&space;f}{\partial&space;p_x}&space;\cdot&space;\frac{\partial&space;p_t}{\partial&space;x}&space;&plus;&space;\frac{\partial&space;f}{\partial&space;t}" title="= -\frac{\partial f}{\partial x} \cdot \frac{\partial p_t}{\partial p_x} + \frac{\partial f}{\partial p_x} \cdot \frac{\partial p_t}{\partial x} + \frac{\partial f}{\partial t}" /></a>
 
-Define the Possion bracket as
+Define the Poisson bracket as
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\{f,g\}=&space;\frac{\partial&space;f}{\partial&space;x}&space;\cdot&space;\frac{\partial&space;g}{\partial&space;p_x}&space;-&space;\frac{\partial&space;f}{\partial&space;p_x}&space;\cdot&space;\frac{\partial&space;g}{\partial&space;x}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\{f,g\}=&space;\frac{\partial&space;f}{\partial&space;x}&space;\cdot&space;\frac{\partial&space;g}{\partial&space;p_x}&space;-&space;\frac{\partial&space;f}{\partial&space;p_x}&space;\cdot&space;\frac{\partial&space;g}{\partial&space;x}" title="\{f,g\}= \frac{\partial f}{\partial x} \cdot \frac{\partial g}{\partial p_x} - \frac{\partial f}{\partial p_x} \cdot \frac{\partial g}{\partial x}" /></a>
 
 To get
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{d}{dt}&space;f(x,p_x,t)&space;=&space;\{&space;p_t,&space;f&space;\}&space;&plus;&space;\frac{\partial&space;f}{\partial&space;t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{d}{dt}&space;f(x,p_x,t)&space;=&space;\{&space;p_t,&space;f&space;\}&space;&plus;&space;\frac{\partial&space;f}{\partial&space;t}" title="\frac{d}{dt} f(x,p_x,t) = \{ p_t, f \} + \frac{\partial f}{\partial t}" /></a>
+
+
+Note.  This implies
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=-\frac{1}{i&space;\hbar}[p_t,\cdot]&space;=&space;\{&space;p_t,&space;\cdot&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-\frac{1}{i&space;\hbar}[p_t,\cdot]&space;=&space;\{&space;p_t,&space;\cdot&space;\}" title="-\frac{1}{i \hbar}[p_t,\cdot] = \{ p_t, \cdot \}" /></a>
