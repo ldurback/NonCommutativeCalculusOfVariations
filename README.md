@@ -184,6 +184,18 @@ Noting that
 
 By convention, we make hbar real and positive so that positive m implies dx is hermitian and a generator of forward translation.
 
+## Equation of Motion: Commutator Bracket **(In progress)**
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;-i\hbar&space;\frac{\partial}{\partial&space;z}" title="p = -i\hbar \frac{\partial}{\partial z}" /></a>
+
+Implies
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p_t&space;=&space;-i&space;\hbar&space;\frac{\partial}{\partial&space;t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_t&space;=&space;-i&space;\hbar&space;\frac{\partial}{\partial&space;t}" title="p_t = -i \hbar \frac{\partial}{\partial t}" /></a>
+
+Thus, for any dynamical variable f, we have
+
+
+
 ## The Hamiltonian (Negative Time-Momentum)
 
 Defining
@@ -204,7 +216,7 @@ And we get
 
 Note:  In the future, we'll simply use -p_t instead of H.
 
-## Equation of Motion
+## Equation of Motion: Poisson Bracket
 
 Consider a dynamical variable f(x,p_x,t).  We have
 
@@ -216,18 +228,6 @@ Define the Possion bracket as
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\{f,g\}=&space;\frac{\partial&space;f}{\partial&space;x}&space;\cdot&space;\frac{\partial&space;g}{\partial&space;p_x}&space;-&space;\frac{\partial&space;f}{\partial&space;p_x}&space;\cdot&space;\frac{\partial&space;g}{\partial&space;x}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\{f,g\}=&space;\frac{\partial&space;f}{\partial&space;x}&space;\cdot&space;\frac{\partial&space;g}{\partial&space;p_x}&space;-&space;\frac{\partial&space;f}{\partial&space;p_x}&space;\cdot&space;\frac{\partial&space;g}{\partial&space;x}" title="\{f,g\}= \frac{\partial f}{\partial x} \cdot \frac{\partial g}{\partial p_x} - \frac{\partial f}{\partial p_x} \cdot \frac{\partial g}{\partial x}" /></a>
 
-And recall
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=p_t=-i\hbar\frac{\partial}{\partial&space;t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_t=-i\hbar\frac{\partial}{\partial&space;t}" title="p_t=-i\hbar\frac{\partial}{\partial t}" /></a>
-
-We therefore have
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=-i&space;\hbar&space;\frac{d}{dt}&space;f(x,p_x,t)=&space;-i\hbar\{&space;p_t,f&space;\}&space;&plus;&space;[p_t,f]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-i&space;\hbar&space;\frac{d}{dt}&space;f(x,p_x,t)=&space;-i\hbar\{&space;p_t,f&space;\}&space;&plus;&space;[p_t,f]" title="-i \hbar \frac{d}{dt} f(x,p_x,t)= -i\hbar\{ p_t,f \} + [p_t,f]" /></a>
-
-Define
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=\langle\{&space;f,g&space;\}\rangle&space;=&space;[f,g]-i\hbar\{f,g\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\langle\{&space;f,g&space;\}\rangle&space;=&space;[f,g]-i\hbar\{f,g\}" title="\langle\{ f,g \}\rangle = [f,g]-i\hbar\{f,g\}" /></a>
-
 To get
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=-i&space;\hbar&space;\frac{d}{dt}&space;f&space;=&space;\langle\{&space;p_t,&space;f&space;\}\rangle" target="_blank"><img src="https://latex.codecogs.com/gif.latex?-i&space;\hbar&space;\frac{d}{dt}&space;f&space;=&space;\langle\{&space;p_t,&space;f&space;\}\rangle" title="-i \hbar \frac{d}{dt} f = \langle\{ p_t, f \}\rangle" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{d}{dt}&space;f(x,p_x,t)&space;=&space;\{&space;p_t,&space;f&space;\}&space;&plus;&space;\frac{\partial&space;f}{\partial&space;t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{d}{dt}&space;f(x,p_x,t)&space;=&space;\{&space;p_t,&space;f&space;\}&space;&plus;&space;\frac{\partial&space;f}{\partial&space;t}" title="\frac{d}{dt} f(x,p_x,t) = \{ p_t, f \} + \frac{\partial f}{\partial t}" /></a>
