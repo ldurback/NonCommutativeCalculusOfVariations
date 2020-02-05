@@ -2,7 +2,9 @@
 
 # Non-Commutative Lagrangian Mechanics
 
-A generalization of Lagrangian Mechanics in which we do not assume commutative variables
+A generalization of Lagrangian Mechanics to a probabilistic mechanics via not assuming that x and dx commute and using
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\delta&space;ExpectationValue(S)&space;=&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta&space;ExpectationValue(S)&space;=&space;0" title="\delta ExpectationValue(S) = 0" /></a>
 
 Perhaps the equations of quantum mechanics follow?
 
@@ -14,17 +16,17 @@ Note:  I will be concentrating on Cooperative Game Theory, in which each agent i
 
 The total system in a cooperative game theory has an initial state (initial cause), an endgoal state (final cause), a current state, and a Utility Function (Accumulated Score), which scores the dynamics between the initial state and the current state.
 
-The Stabilizing Strategies of a game theory have a final Utility Function (the Utility Function evaluated at the endgoal) which does not at all change when the strategy is infinitesimally perturbed.  This ensures that approximations to the strategies exists.
+The Stabilizing Strategies of a game theory have a final expected Utility Function (the expected value of the Utility Function evaluated at the endgoal) which does not at all change when the strategy is infinitesimally perturbed.  This ensures that approximations to the strategies exists.
 
 A Relativistic Game is one whose scores respect a form of relativity.  In the case of Galilean relativity, we have a universal time parameter and we can say that the Utility Function (Accumulated Score), which scores the dynamics between the initial and current state, must be in the form of an integral over time of an Immediate Score.  Additionally, we can say that a game theory respects relativity when the Immediate Score is a constant when no available change in state is preferable.
 
-A Non-Commutative Game is one in which the variables that appear in the Utility Function do not necessarily commute.  Since I am considering Galilean relativity, I will assume that time, t, is hermitian, that change in time, dt, is a positive hermitian infinitesimal, and that the curvature of time, d^2t = 0.  I will also assume that position, x, is hermitian and that dx and d^2 x exist. Furthermore, commutation relations between all variables exist, and we have the following commutation relations: [x,t]=0, [dx,t]=0, [x,dt]=0, [dx,dt] = 0.  I also assume that S(x,t), the Utility Function, and L(x,(dx/dt),t), the Immediate Score, both commute and have derivatives. 
+A Non-Commutative Game is one in which the variables that appear in the Utility Function do not necessarily commute.  Since I am considering Galilean relativity, I will assume that time, t, is real, that change in time, dt, is a positive real infinitesimal, and that the curvature of time, d^2t = 0.  I will also assume that position, x, is hermitian and that dx and d^2 x exist. Furthermore, commutation relations between all variables exist.  I also assume that S(x,t), the Utility Function, and L(x,(dx/dt),t), the Immediate Score, both commute and have derivatives. 
 
 ## Assumptions
 
-x, t, and dt are hermitian.  dt is positive.  d^2 t = 0.
+x is hermitian.  t, dt are real  d^2 t = 0.
 
-Commutation relations exist between x, dx, d^2, t, and dt.
+Commutation relations exist between x, dx, and d^2x.
 
 x, and all its differentials, commute with t, and all its differentials.
 
@@ -34,15 +36,23 @@ The system progresses from an fixed initial state (the initial cause) to a fixed
 
 Let S(z) be the system's Utility Function
 
-The stategies of all agents stabilizes S(z_final).
+Let <a href="https://www.codecogs.com/eqnedit.php?latex=|\psi\rangle" target="_blank"><img src="https://latex.codecogs.com/gif.latex?|\psi\rangle" title="|\psi\rangle" /></a> be a normalized Heisenberg picture (not varried or dynamic) wavefunction for the system
+
+Assume
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=ExpectationValue(S(z))&space;=&space;\langle&space;\psi|S|\psi\rangle" target="_blank"><img src="https://latex.codecogs.com/gif.latex?ExpectationValue(S(z))&space;=&space;\langle&space;\psi|S|\psi\rangle" title="ExpectationValue(S(z)) = \langle \psi|S|\psi\rangle" /></a>
+
+The stategies of all agents stabilizes the expectation value of S(z_final).
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=0&space;=&space;\delta&space;\langle&space;\psi|&space;S(z_{final})&space;|&space;\psi&space;\rangle&space;=&space;\langle&space;\psi&space;|&space;\delta&space;S(z_{final})&space;|&space;\psi&space;\rangle" target="_blank"><img src="https://latex.codecogs.com/gif.latex?0&space;=&space;\delta&space;\langle&space;\psi|&space;S(z_{final})&space;|&space;\psi&space;\rangle&space;=&space;\langle&space;\psi&space;|&space;\delta&space;S(z_{final})&space;|&space;\psi&space;\rangle" title="0 = \delta \langle \psi| S(z_{final}) | \psi \rangle = \langle \psi | \delta S(z_{final}) | \psi \rangle" /></a>
+
+Abstracting away the wavefunction
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\delta&space;S(z_{final})&space;=&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta&space;S(z_{final})&space;=&space;0" title="\delta S(z_{final}) = 0" /></a>
 
 S(z) is the integral from the initial state to the final state of L(x, t, dx/dt), the Immediate Score, or Lagrangian, over time.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=S(z)&space;=&space;\int_{z_{init}}^{z}&space;L(x,t,\frac{dx}{dt})&space;\cdot&space;dt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S(z)&space;=&space;\int_{z_{init}}^{z}&space;L(x,t,\frac{dx}{dt})&space;\cdot&space;dt" title="S(z) = \int_{z_{init}}^{z} L(x,t,\frac{dx}{dt}) \cdot dt" /></a>
-
-Where the dot product is defined as being half the anti-commutator.
+<a href="https://www.codecogs.com/eqnedit.php?latex=S(z)&space;=&space;\int_{z_{init}}^{z}&space;L(x,t,\frac{dx}{dt})&space;dt" target="_blank"><img src="https://latex.codecogs.com/gif.latex?S(z)&space;=&space;\int_{z_{init}}^{z}&space;L(x,t,\frac{dx}{dt})&space;dt" title="S(z) = \int_{z_{init}}^{z} L(x,t,\frac{dx}{dt}) dt" /></a>
 
 Assume that L and S commute and have derivatives.
 
@@ -58,27 +68,27 @@ Then F, being the gradient of the Immediate Score with respect to state, is 0 wh
 
 Since we assumed that L and S have derivatives.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=0&space;=&space;\delta&space;S(z_{final})&space;=&space;\delta&space;\int_{z_{init}}^{z_{final}}&space;L&space;\cdot&space;dt&space;=&space;\int_{z_{init}}^{z_{final}}&space;\delta(L&space;\cdot&space;dt)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?0&space;=&space;\delta&space;S(z_{final})&space;=&space;\delta&space;\int_{z_{init}}^{z_{final}}&space;L&space;\cdot&space;dt&space;=&space;\int_{z_{init}}^{z_{final}}&space;\delta(L&space;\cdot&space;dt)" title="0 = \delta S(z_{final}) = \delta \int_{z_{init}}^{z_{final}} L \cdot dt = \int_{z_{init}}^{z_{final}} \delta(L \cdot dt)" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=0&space;=&space;\delta&space;S(z_{final})&space;=&space;\delta&space;\int_{z_{init}}^{z_{final}}&space;L&space;dt&space;=&space;\int_{z_{init}}^{z_{final}}&space;\delta(Ldt)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?0&space;=&space;\delta&space;S(z_{final})&space;=&space;\delta&space;\int_{z_{init}}^{z_{final}}&space;L&space;dt&space;=&space;\int_{z_{init}}^{z_{final}}&space;\delta(Ldt)" title="0 = \delta S(z_{final}) = \delta \int_{z_{init}}^{z_{final}} L dt = \int_{z_{init}}^{z_{final}} \delta(Ldt)" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\int_{z_{init}}^{z_{final}}&space;\delta(L&space;\cdot&space;dt)&space;=&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;dz}&space;\cdot&space;\delta&space;dz" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\int_{z_{init}}^{z_{final}}&space;\delta(L&space;\cdot&space;dt)&space;=&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;dz}&space;\cdot&space;\delta&space;dz" title="\int_{z_{init}}^{z_{final}} \delta(L \cdot dt) = \int_{z_{init}}^{z_{final}} \frac{\partial L \cdot dt}{\partial z} \cdot \delta z + \frac{\partial L \cdot dt}{\partial dz} \cdot \delta dz" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\int_{z_{init}}^{z_{final}}&space;\delta(L&space;dt)&space;=&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;dz}&space;\cdot&space;\delta&space;dz" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\int_{z_{init}}^{z_{final}}&space;\delta(L&space;dt)&space;=&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;dz}&space;\cdot&space;\delta&space;dz" title="\int_{z_{init}}^{z_{final}} \delta(L dt) = \int_{z_{init}}^{z_{final}} \frac{\partial L \cdot dt}{\partial z} \cdot \delta z + \frac{\partial L \cdot dt}{\partial dz} \cdot \delta dz" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex==&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;dz}&space;\cdot&space;d&space;\delta&space;z" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;dz}&space;\cdot&space;d&space;\delta&space;z" title="= \int_{z_{init}}^{z_{final}} \frac{\partial L \cdot dt}{\partial z} \cdot \delta z + \frac{\partial L \cdot dt}{\partial dz} \cdot d \delta z" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex==&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;\frac{\partial&space;L&space;dt}{\partial&space;dz}&space;\cdot&space;d&space;\delta&space;z" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;\frac{\partial&space;L&space;dt}{\partial&space;dz}&space;\cdot&space;d&space;\delta&space;z" title="= \int_{z_{init}}^{z_{final}} \frac{\partial L dt}{\partial z} \cdot \delta z + \frac{\partial L dt}{\partial dz} \cdot d \delta z" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex==&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;d(\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;dz}&space;\cdot&space;\delta&space;z)&space;-&space;d(\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z})&space;\cdot&space;\delta&space;z" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;d(\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;dz}&space;\cdot&space;\delta&space;z)&space;-&space;d(\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z})&space;\cdot&space;\delta&space;z" title="= \int_{z_{init}}^{z_{final}} \frac{\partial L \cdot dt}{\partial z} \cdot \delta z + d(\frac{\partial L \cdot dt}{\partial dz} \cdot \delta z) - d(\frac{\partial L \cdot dt}{\partial d z}) \cdot \delta z" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex==&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;d(\frac{\partial&space;L&space;dt}{\partial&space;dz}&space;\cdot&space;\delta&space;z)&space;-&space;d(\frac{\partial&space;L&space;dt}{\partial&space;d&space;z})&space;\cdot&space;\delta&space;z" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=&space;\int_{z_{init}}^{z_{final}}&space;\frac{\partial&space;L&space;dt}{\partial&space;z}&space;\cdot&space;\delta&space;z&space;&plus;&space;d(\frac{\partial&space;L&space;dt}{\partial&space;dz}&space;\cdot&space;\delta&space;z)&space;-&space;d(\frac{\partial&space;L&space;dt}{\partial&space;d&space;z})&space;\cdot&space;\delta&space;z" title="= \int_{z_{init}}^{z_{final}} \frac{\partial L dt}{\partial z} \cdot \delta z + d(\frac{\partial L dt}{\partial dz} \cdot \delta z) - d(\frac{\partial L dt}{\partial d z}) \cdot \delta z" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex==&space;\int_{z_{init}}^{z_{final}}&space;[\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;z}&space;-&space;d\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z}]&space;\cdot&space;\delta&space;z&space;&plus;&space;[\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z}&space;\cdot&space;\delta&space;z]_{z_{init}}^{z_{final}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=&space;\int_{z_{init}}^{z_{final}}&space;[\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;z}&space;-&space;d\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z}]&space;\cdot&space;\delta&space;z&space;&plus;&space;[\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z}&space;\cdot&space;\delta&space;z]_{z_{init}}^{z_{final}}" title="= \int_{z_{init}}^{z_{final}} [\frac{\partial L \cdot dt}{\partial z} - d\frac{\partial L \cdot dt}{\partial d z}] \cdot \delta z + [\frac{\partial L \cdot dt}{\partial d z} \cdot \delta z]_{z_{init}}^{z_{final}}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex==&space;\int_{z_{init}}^{z_{final}}&space;[\frac{\partial&space;L&space;dt}{\partial&space;z}&space;-&space;d\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}]&space;\cdot&space;\delta&space;z&space;&plus;&space;[\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}&space;\cdot&space;\delta&space;z]_{z_{init}}^{z_{final}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=&space;\int_{z_{init}}^{z_{final}}&space;[\frac{\partial&space;L&space;dt}{\partial&space;z}&space;-&space;d\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}]&space;\cdot&space;\delta&space;z&space;&plus;&space;[\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}&space;\cdot&space;\delta&space;z]_{z_{init}}^{z_{final}}" title="= \int_{z_{init}}^{z_{final}} [\frac{\partial L dt}{\partial z} - d\frac{\partial L dt}{\partial d z}] \cdot \delta z + [\frac{\partial L dt}{\partial d z} \cdot \delta z]_{z_{init}}^{z_{final}}" /></a>
 
 Since the end points are not varied, the last term here is 0
 
-<a href="https://www.codecogs.com/eqnedit.php?latex==&space;\int_{z_{init}}^{z_{final}}&space;[\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;z}&space;-&space;d&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z}]&space;\cdot&space;\delta&space;z" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=&space;\int_{z_{init}}^{z_{final}}&space;[\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;z}&space;-&space;d&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z}]&space;\cdot&space;\delta&space;z" title="= \int_{z_{init}}^{z_{final}} [\frac{\partial L \cdot dt}{\partial z} - d \frac{\partial L \cdot dt}{\partial d z}] \cdot \delta z" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex==&space;\int_{z_{init}}^{z_{final}}&space;[\frac{\partial&space;L&space;dt}{\partial&space;z}&space;-&space;d&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}]&space;\cdot&space;\delta&space;z" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=&space;\int_{z_{init}}^{z_{final}}&space;[\frac{\partial&space;L&space;dt}{\partial&space;z}&space;-&space;d&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}]&space;\cdot&space;\delta&space;z" title="= \int_{z_{init}}^{z_{final}} [\frac{\partial L dt}{\partial z} - d \frac{\partial L dt}{\partial d z}] \cdot \delta z" /></a>
 
 Noting that the variation is arbitrary gives us the Euler-Lagrange equation
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;z}&space;=&space;d\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;z}&space;=&space;d\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z}" title="\frac{\partial L \cdot dt}{\partial z} = d\frac{\partial L \cdot dt}{\partial d z}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\partial&space;L&space;dt}{\partial&space;z}&space;=&space;d\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;L&space;dt}{\partial&space;z}&space;=&space;d\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" title="\frac{\partial L dt}{\partial z} = d\frac{\partial L dt}{\partial d z}" /></a>
 
 which we can rewrite as
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\partial&space;L}{\partial&space;z}&space;=&space;\frac{d}{dt}\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;L}{\partial&space;z}&space;=&space;\frac{d}{dt}\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z}" title="\frac{\partial L}{\partial z} = \frac{d}{dt}\frac{\partial L \cdot dt}{\partial d z}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\partial&space;L}{\partial&space;z}&space;=&space;\frac{d}{dt}\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;L}{\partial&space;z}&space;=&space;\frac{d}{dt}\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" title="\frac{\partial L}{\partial z} = \frac{d}{dt}\frac{\partial L dt}{\partial d z}" /></a>
 
 ## Force and Momentum
 
@@ -92,7 +102,7 @@ The Force measures the Gradient of the Immediate Score with respect to State.  T
 
 Definition of Momentum
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;:=&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;:=&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z}" title="p := \frac{\partial L \cdot dt}{\partial d z}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;:=&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;:=&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}" title="p := \frac{\partial L dt}{\partial d z}" /></a>
 
 Since <a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;\frac{\partial&space;dS}{\partial&space;dz}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;\frac{\partial&space;dS}{\partial&space;dz}" title="p = \frac{\partial dS}{\partial dz}" /></a>, the momentum measures the Gradient of the Additional Score with respect to the Motion.  The momentum tells you the direction that the motion can be changed to most improve the additional score and the rate of this improvement.  Though it is called the "momentum", it is the "profit of changing motion".
 
@@ -104,9 +114,9 @@ The equation says that, for a strategy that stabilizes the final accumulated sco
 
 ## Alternate form of the Lagrangian
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=d^2&space;S&space;=&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;z}&space;\cdot&space;d&space;z&space;&plus;&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z}&space;\cdot&space;d^2&space;z&space;=&space;dp&space;\cdot&space;dz&space;&plus;&space;p&space;\cdot&space;d^2&space;z&space;=&space;d(p&space;\cdot&space;d&space;z)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d^2&space;S&space;=&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;z}&space;\cdot&space;d&space;z&space;&plus;&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;d&space;z}&space;\cdot&space;d^2&space;z&space;=&space;dp&space;\cdot&space;dz&space;&plus;&space;p&space;\cdot&space;d^2&space;z&space;=&space;d(p&space;\cdot&space;d&space;z)" title="d^2 S = \frac{\partial L \cdot dt}{\partial z} \cdot d z + \frac{\partial L \cdot dt}{\partial d z} \cdot d^2 z = dp \cdot dz + p \cdot d^2 z = d(p \cdot d z)" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=d^2&space;S&space;=&space;\frac{\partial&space;L&space;dt}{\partial&space;z}&space;\cdot&space;d&space;z&space;&plus;&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}&space;\cdot&space;d^2&space;z&space;=&space;dp&space;\cdot&space;dz&space;&plus;&space;p&space;\cdot&space;d^2&space;z&space;=&space;d(p&space;\cdot&space;d&space;z)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d^2&space;S&space;=&space;\frac{\partial&space;L&space;dt}{\partial&space;z}&space;\cdot&space;d&space;z&space;&plus;&space;\frac{\partial&space;L&space;dt}{\partial&space;d&space;z}&space;\cdot&space;d^2&space;z&space;=&space;dp&space;\cdot&space;dz&space;&plus;&space;p&space;\cdot&space;d^2&space;z&space;=&space;d(p&space;\cdot&space;d&space;z)" title="d^2 S = \frac{\partial L dt}{\partial z} \cdot d z + \frac{\partial L dt}{\partial d z} \cdot d^2 z = dp \cdot dz + p \cdot d^2 z = d(p \cdot d z)" /></a>
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=dS&space;=&space;L&space;\cdot&space;dt&space;=&space;p&space;\cdot&space;dz" target="_blank"><img src="https://latex.codecogs.com/gif.latex?dS&space;=&space;L&space;\cdot&space;dt&space;=&space;p&space;\cdot&space;dz" title="dS = L \cdot dt = p \cdot dz" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=dS&space;=&space;L&space;dt&space;=&space;p&space;\cdot&space;dz" target="_blank"><img src="https://latex.codecogs.com/gif.latex?dS&space;=&space;L&space;dt&space;=&space;p&space;\cdot&space;dz" title="dS = L dt = p \cdot dz" /></a>
 
 Note:  this implies
 
@@ -140,7 +150,7 @@ for some proportionality constant k.  Defining m = 2k, we get that as F -> 0
 
 Note
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=p_x&space;=&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;dx}&space;=&space;\frac{\partial&space;L}{\partial&space;\frac{dx}{dt}}&space;\to&space;m&space;\cdot&space;\frac{dx}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_x&space;=&space;\frac{\partial&space;L&space;\cdot&space;dt}{\partial&space;dx}&space;=&space;\frac{\partial&space;L}{\partial&space;\frac{dx}{dt}}&space;\to&space;m&space;\cdot&space;\frac{dx}{dt}" title="p_x = \frac{\partial L \cdot dt}{\partial dx} = \frac{\partial L}{\partial \frac{dx}{dt}} \to m \cdot \frac{dx}{dt}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=p_x&space;=&space;\frac{\partial&space;L&space;dt}{\partial&space;dx}&space;=&space;\frac{\partial&space;L}{\partial&space;\frac{dx}{dt}}&space;\to&space;m&space;\cdot&space;\frac{dx}{dt}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_x&space;=&space;\frac{\partial&space;L&space;dt}{\partial&space;dx}&space;=&space;\frac{\partial&space;L}{\partial&space;\frac{dx}{dt}}&space;\to&space;m&space;\cdot&space;\frac{dx}{dt}" title="p_x = \frac{\partial L dt}{\partial dx} = \frac{\partial L}{\partial \frac{dx}{dt}} \to m \cdot \frac{dx}{dt}" /></a>
 
 Since p_x is independent of F, we get that regardless of F
 
